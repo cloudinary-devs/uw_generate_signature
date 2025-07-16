@@ -56,6 +56,6 @@ app.get('/health', (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
   console.log(
-    `Signature endpoint: http://localhost:${PORT}/my_generate_signature`
+    `Signature endpoint: http://localhost:${PORT}`
   );
 });

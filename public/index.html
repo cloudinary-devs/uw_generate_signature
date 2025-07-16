@@ -32,6 +32,7 @@
         background-color: #f8f9fa;
         border-radius: 5px;
         border-left: 4px solid #007bff;
+        overflow: scroll;
       }
       button {
         background-color: #007bff;
@@ -118,7 +119,7 @@
       function openUploadWidget() {
         const myWidget = cloudinary.createUploadWidget(
           {
-            cloudName: 'yelenik',
+            cloudName: '<your-cloud-name>',
             // The widget will call this function before uploading
             prepareUploadParams: (cb, params) => {
               // Call your backend to get a signature
