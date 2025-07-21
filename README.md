@@ -11,36 +11,27 @@ This project provides a server-side implementation for generating Cloudinary sig
 
 ## Setup Instructions
 
-### 1. Install Dependencies
+1. **Install dependencies**
 
 ```bash
 npm install
 ```
 
-### 2. Configure Environment Variables
+2. **Get your cloudinary credentials**
+   1. Sign up for a Cloudinary account at [cloudinary.com](https://cloudinary.com)
+   2. Go to the **API Keys** page of the Console Settings.
+   3. Copy your **Cloud Name**, **API Key**, and **API Secret**.
 
-Create a `.env` file in the root directory with your Cloudinary credentials:
+3. **Configure Environment Variables**<p>Create a `.env` file in the root directory with your Cloudinary credentials, replacing the placeholders with your actual Cloudinary credentials.
 
-```bash
-cp env.example .env
-```
+    ```
+    CLOUDINARY_CLOUD_NAME=your_cloud_name
+    CLOUDINARY_API_KEY=your_api_key
+    CLOUDINARY_API_SECRET=your_api_secret
+    PORT=3000
+    ```
 
-Then edit the `.env` file with your actual Cloudinary credentials:
-
-```
-CLOUDINARY_CLOUD_NAME=your_cloud_name
-CLOUDINARY_API_KEY=your_api_key
-CLOUDINARY_API_SECRET=your_api_secret
-PORT=3000
-```
-
-### 3. Get Your Cloudinary Credentials
-
-1. Sign up for a Cloudinary account at [cloudinary.com](https://cloudinary.com)
-2. Go to your Dashboard
-3. Copy your Cloud Name, API Key, and API Secret
-
-### 4. Run the Server
+4. **Run the server.**<p> The server will start on `http://localhost:3000`.</p>
 
 ```bash
 # Development mode (with auto-restart)
@@ -48,10 +39,6 @@ npm run dev
 
 # Production mode
 npm start
-```
-
-The server will start on `http://localhost:3000`
-
 ## Usage
 
 ### Server Endpoint
