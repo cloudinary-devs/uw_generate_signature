@@ -31,7 +31,7 @@ npm install
     PORT=3000
     ```
 
-4. **Run the server.**<p> The server will start on `http://localhost:3000`.</p>
+4. **Run the server**<p> The server will start on `http://localhost:3000`.</p>
 
 ```bash
 # Development mode (with auto-restart)
@@ -40,6 +40,7 @@ npm run dev
 # Production mode
 npm start
 ## Usage
+```
 
 ### Server Endpoint
 
